@@ -1,26 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderDisplay />
+  <WeatherContent />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderDisplay from './components/HeaderDisplay.vue';
+import WeatherContent from './components/weather/WeatherContent.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: "App",
+    components: { HeaderDisplay, WeatherContent }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  
 </style>
